@@ -19,5 +19,5 @@ Ruby on Rails Album Review App
 
 ## In the command line:
 
-- rails generate model Album
- -
+- rails generate modelName attribute:type
+ -"rails generate model Album title:string description:text author:string"
