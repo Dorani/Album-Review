@@ -21,3 +21,16 @@ Ruby on Rails Album Review App
 
 - rails generate modelName attribute:type
 - "rails generate model Album title:string description:text author:string"
+
+- The above command will do the following:
+ - create files: model file, migration file.
+ - look in our db/migrate directory
+ - when you create a model(album) it will correspond to a table in the database which will be plural(albums.
+ - look in app-directory: which will be where most of our code will live
+ - app/models: filling that in with associations
+ - When you create a new model or migration, a new migration is added to the db/migrate directory.
+
+ - Rake db:migrate is a command that checks the missing migrations that need to be applied to the database and applies them to the DB, which ultimately updates it.
+
+- In the command line:
+ - rake db:migrate
