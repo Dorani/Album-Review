@@ -19,7 +19,7 @@ Ruby on Rails Album Review App
 
 ## In the command line:
 
-- rails generate modelName attribute:type
+- This is the structure of creating a model in the terminal: rails generate modelName attribute:type
 - "rails generate model Album title:string description:text author:string"
 
 - The above command will do the following:
@@ -32,5 +32,5 @@ Ruby on Rails Album Review App
 
  - Rake db:migrate is a command that checks the missing migrations that need to be applied to the database and applies them to the DB, which ultimately updates it.
 
-- In the command line:
- - rake db:migrate
+###In the command line:
+ - "rake db:migrate"
