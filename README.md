@@ -43,3 +43,8 @@ Ruby on Rails Album Review App
  - in browser go to localhost:3000 to see if rails server launch is successful.
 
 ## Controllers in ruby on rails:
+
+- House for all the actions, new create, edit, update, delete..
+- Actions will correspond to the views
+-"rails generate controller Albums" controller names are plural
+- it will create our controller file, test files, view templates for albums.
