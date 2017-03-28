@@ -17,7 +17,7 @@ Ruby on Rails Album Review App
  - a description
  - an artist
 
-## In the command line:
+## "In the command line":
 
 - This is the structure of creating a model in the terminal: rails generate modelName attribute:type
 - "rails generate model Album title:string description:text author:string"
@@ -32,5 +32,14 @@ Ruby on Rails Album Review App
 
  - Rake db:migrate is a command that checks the missing migrations that need to be applied to the database and applies them to the DB, which ultimately updates it.
 
-In the command line:
+-In the command line:
  - "rake db:migrate"
+
+## Start a new server:
+
+- in the same directory where all our work lives:
+- in command line: "rails s"
+- it creates a development viewing environment.
+ - in browser go to localhost:3000 to see if rails server launch is successful.
+
+## Controllers in ruby on rails:
