@@ -48,3 +48,11 @@ Ruby on Rails Album Review App
 - Actions will correspond to the views
 -"rails generate controller Albums" controller names are plural
 - it will create our controller file, test files, view templates for albums.
+
+## Define Routes:
+
+- Routes correspond to the urls we visit.
+- type in rake routes in terminal to see which routes we have
+- we will create a restful route:
+  - a single line command that generates all the corresponding url we need for a specific controller.
+- in the routes.rb file, type in resources:albums.
