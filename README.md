@@ -55,4 +55,5 @@ Ruby on Rails Album Review App
 - type in rake routes in terminal to see which routes we have
 - we will create a restful route:
   - a single line command that generates all the corresponding url we need for a specific controller.
-- in the routes.rb file, type in resources:albums.
+- in the routes.rb file, type in the following after do: resources:albums.
+  - instead of declaring seperate routes for our index, show, edit, delete , new , update actions, a resourceful route declares them in a single line: resources:albums
