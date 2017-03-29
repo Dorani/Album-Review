@@ -58,4 +58,4 @@ Ruby on Rails Album Review App
 - in the routes.rb file, type in the following after do: resources:albums.
   - instead of declaring seperate routes for our index, show, edit, delete , new , update actions, a resourceful route declares them in a single line: resources:albums
 - then run in the terminal: "rake Routes"
-  - this will create our restful routes, and root path which will display all of our albums.
+  - this will create our restful routes, and root path which will display all of our albums:
