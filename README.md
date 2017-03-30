@@ -70,3 +70,6 @@ Ruby on Rails Album Review App
 ## Define the index actions
 
 - go into the 'albums_controller.rb' file in the controllers directory and quickly fill out the index action.
+     - now when we access our root path, it will say our template is missing.
+     - when we visited the new route, it said we were missing an action, but now our action is define so all we need to do is wire it to a template:
+        - in our views/albums directory, create a file called index.html.erb, fill in some place text and let's test it out.
