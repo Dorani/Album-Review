@@ -72,4 +72,16 @@ Ruby on Rails Album Review App
 - go into the 'albums_controller.rb' file in the controllers directory and quickly fill out the index action.
      - now when we access our root path, it will say our template is missing.
      - when we visited the new route, it said we were missing an action, but now our action is define so all we need to do is wire it to a template:
-        - in our views/albums directory, create a file called index.html.erb, fill in some place text and let's test it out.
+
+- in our views/albums directory, create a file called index.html.erb, fill in some place text and let's test it out.
+
+## Gems!
+
+- gems will live in our gem file:
+    - they are essentially, libraries of functionality that we can add to our application.
+    - we will be using 'simple form' and 'bootstrap sass'.
+    - visit: www.rubygems.org and type in the gems we will be using and copy the gem/file link.
+    - paste it in our gem file.
+
+- Simple form provides an easy structure for the user to fill out information.
+- Bootstrap sass is the bootstrap framework from twitter but its ported from its native processing language which is less and its ported to sass.
