@@ -91,4 +91,4 @@ Ruby on Rails Album Review App
         - then check the homepage link for simple form: https://github.com/plataformatec/simple_form
         - there will be instructions on running the generator.
         - the generator will allow us to use simple form. In our case we are using bootstrap so let's use this:
-        - "rails generate simple_form:install --bootstrap"
+            - "rails generate simple_form:install --bootstrap"
