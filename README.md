@@ -81,7 +81,7 @@ Ruby on Rails Album Review App
     - they are essentially, libraries of functionality that we can add to our application.
     - we will be using 'simple form' and 'bootstrap sass'.
     - visit: www.rubygems.org and type in the gems we will be using and copy the gem/file link.
-    - paste it in our gem file.
+    - paste it in our gem file/link.
 
 - Simple form provides an easy structure for the user to fill out information.
 - Bootstrap sass is the bootstrap framework from twitter but its ported from its native processing language which is less and its ported to sass.
