@@ -66,3 +66,7 @@ Ruby on Rails Album Review App
 - next, in the routes.rb file, we should define our root path and make it correspond to albums#index action. Below line 2 input the following:
     - root 'albums#index'
     - then run rake routes in the terminal.
+
+## Define the index actions
+
+- go into the 'albums_controller.rb' file in the controllers directory and quickly fill out the index action.
