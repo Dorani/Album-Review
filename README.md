@@ -89,4 +89,6 @@ Ruby on Rails Album Review App
     - now to let our application know we want to use those gems. We need to go into our terminal:
         - "bundle install"
         - then check the homepage link for simple form: https://github.com/plataformatec/simple_form
-        - there will be instructions and finishing installation.
+        - there will be instructions on running the generator.
+        - the generator will allow us to use simple form. In our case we are using bootstrap so let's use this:
+        - "rails generate simple_form:install --bootstrap"
