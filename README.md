@@ -85,3 +85,6 @@ Ruby on Rails Album Review App
 
 - Simple form provides an easy structure for the user to fill out information.
 - Bootstrap sass is the bootstrap framework from twitter but its ported from its native processing language which is less and its ported to sass.
+
+    - now to let our application know we want to use those gems we need to go into our teminal:
+        - "bundle install"
