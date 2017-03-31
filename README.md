@@ -99,3 +99,7 @@ Ruby on Rails Album Review App
         @import "bootstrap-sprockets";
         @import "bootstrap";
         bootstrap-sprockets must be imported before bootstrap for the icon fonts to work.
+
+        - add "//= require bootstrap-sprockets" in the javascript/application.js
+
+    - Now, if we run rails s, we should see a drastic difference with the styling!
