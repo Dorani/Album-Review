@@ -112,3 +112,4 @@ Ruby on Rails Album Review App
     - create will be same as album, but will accept album params.
     -Album params is when a user, fills in info and send request, it will passed with the user info in a form.
         - require name of our model, title, description and artist.
+        - also, album_params gets defined in a private method.
