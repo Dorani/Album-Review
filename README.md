@@ -92,3 +92,10 @@ Ruby on Rails Album Review App
         - there will be instructions on running the generator.
         - the generator will allow us to use simple form. In our case we are using bootstrap so let's use this:
             - "rails generate simple_form:install --bootstrap".
+
+        - Import Bootstrap styles in app/assets/stylesheets/application.scss:
+
+        - "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+        @import "bootstrap-sprockets";
+        @import "bootstrap";
+        bootstrap-sprockets must be imported before bootstrap for the icon fonts to work.
