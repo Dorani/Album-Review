@@ -113,3 +113,9 @@ Ruby on Rails Album Review App
     -Album params is when a user, fills in info and send request, it will passed with the user info in a form.
         - require name of our model, title, description and artist.
         - also, album_params gets defined in a private method.
+
+## New template:
+
+- now that we have our actions defined, lets create some templates to wire them to:
+    - views/albums/ and create new.html.erb
+    
