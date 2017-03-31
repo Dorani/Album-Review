@@ -118,4 +118,5 @@ Ruby on Rails Album Review App
 
 - now that we have our actions defined, lets create some templates to wire them to:
     - views/albums/ and create new.html.erb
-    
+    - add some content, then run rails, and go to the following route to test: localhost:3000/albums/new
+    - you should see our quickly added content for test.
