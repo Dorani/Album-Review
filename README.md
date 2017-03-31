@@ -103,3 +103,12 @@ Ruby on Rails Album Review App
         - add "//= require bootstrap-sprockets" in the javascript/application.js
 
     - Now, if we run rails s, we should see a drastic difference with the styling!
+
+
+## New actions:
+
+- def new and create!
+    - new: @album notes an instance var which is what we use in our views.
+    - create will be same as album, but will accept album params.
+    -Album params is when a user, fills in info and send request, it will passed with the user info in a form.
+        - require name of our model, title, description and artist.
