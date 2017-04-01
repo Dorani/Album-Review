@@ -1,3 +1,5 @@
 <% @albums.each do |album| %>
 <h2> <%= album.title %> </h2>
 <% end %>
+
+<%= link_to "Add Album", new_album_path%>
