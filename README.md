@@ -153,3 +153,4 @@ Ruby on Rails Album Review App
 - the go to the corresponding view template
     - loop through the albums
     - then display them.
+    - create a link at the bottom to our create_new album path.
