@@ -139,3 +139,7 @@ Ruby on Rails Album Review App
     - redirect to the root path:
         - index
     - if not saved, we will render a new form.
+    - album created, to check that we can go into our rails console by typing rails c:
+        - Album.connection
+        - @album = Album.first:
+            - we should see all the details on our 1st album created.
