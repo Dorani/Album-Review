@@ -131,3 +131,11 @@ Ruby on Rails Album Review App
         - we will rendering the form in the new view, so we will be using the instance var @album.
         - see simple form documentation: https://github.com/plataformatec/simple_form
   - Now, once we have our form partial complete, we will need to render it in our new.html.erb file using the script <%= render 'form' %>.
+
+## Actions
+
+- go back to our create action in our controller:
+    - add conditional statement, in the event that an album is created.
+    - redirect to the root path:
+        - index
+    - if not saved, we will render a new form.
