@@ -143,3 +143,13 @@ Ruby on Rails Album Review App
         - Album.connection
         - @album = Album.first:
             - we should see all the details on our 1st album created.
+
+## Displaying albums on index
+
+- in our index action:
+    - define an instance variable (@albums)
+    - and associate with @albums.all
+    - order it by created_at Attribute
+- the go to the corresponding view template
+    - loop through the albums
+    - then display them.
