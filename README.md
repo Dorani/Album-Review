@@ -127,5 +127,7 @@ Ruby on Rails Album Review App
 
 - However, we will not create the form in the new file, we will create a form partial.
     - it will house our form, so we can reference it in specific views.
-        - to denote a partial: use an _ directly before the file name: form.html.erb
+        - to denote a partial: use an _ directly before the file name: form.html.erb,
+        - we will rendering the form in the new view, so we will be using the instance var @album.
+        - see simple form documentation: https://github.com/plataformatec/simple_form
         
