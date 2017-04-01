@@ -130,4 +130,4 @@ Ruby on Rails Album Review App
         - to denote a partial: use an _ directly before the file name: form.html.erb,
         - we will rendering the form in the new view, so we will be using the instance var @album.
         - see simple form documentation: https://github.com/plataformatec/simple_form
-        
+  - Now, once we have our form partial complete, we will need to render it in our new.html.erb file using the script <%= render 'form' %>.
