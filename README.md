@@ -120,3 +120,12 @@ Ruby on Rails Album Review App
     - views/albums/ and create new.html.erb
     - add some content, then run rails, and go to the following route to test: localhost:3000/albums/new
     - you should see our quickly added content for test.
+
+## Partials, views.
+
+- next, we will be creating our form in this new.html.
+
+- However, we will not create the form in the new file, we will create a form partial.
+    - it will house our form, so we can reference it in specific views.
+        - to denote a partial: use an _ directly before the file name: form.html.erb
+        
