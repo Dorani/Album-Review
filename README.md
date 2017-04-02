@@ -15,7 +15,7 @@ Ruby on Rails Album Review App
 - our albums will have the following Attributes:
   - a title
   - a description
-  - an artist
+  - an author (artist)
 
 ## Command line:
 
