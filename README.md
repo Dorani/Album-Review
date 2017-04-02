@@ -163,3 +163,4 @@ Ruby on Rails Album Review App
     - so to make code more dry, we should refactor the code and define a method called find_album in our private method area.
     - define a before_action, to find our album, and only find album for specific actions.
     - create a show file in the views.
+    - in this application, we will be creating our actions and then the corresponding view files always.
