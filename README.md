@@ -154,3 +154,10 @@ Ruby on Rails Album Review App
     - loop through the albums
     - then display them.
     - create a link at the bottom to our create_new album path.
+
+## New action
+
+- now, we will define a new action called show:
+    - to show an album we will first need to find the album by params_id
+    - we will be finding the album in our show action, and in other types of actions as well.
+    
