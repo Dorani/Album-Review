@@ -159,5 +159,7 @@ Ruby on Rails Album Review App
 
 - now, we will define a new action called show:
     - to show an album we will first need to find the album by params_id
-    - we will be finding the album in our show action, and in other types of actions as well.
-    
+    - we will be finding the album in our show action, and in other types of actions as well such as update, edit and destroy functionality
+    - so to make code more dry, we should refactor the code and define a method called find_album in our private method area.
+    - define a before_action, to find our album, and only find album for specific actions.
+    - create a show file in the views.
