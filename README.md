@@ -166,3 +166,20 @@ Ruby on Rails Album Review App
     - in this application, we will be creating our actions and then the corresponding view files always.
     - in the show.html.erb render what we want.
     - in our index to easily access the specific album details, we will create a link to the show path per specific album.
+
+## Edit/Update and Destroy Albums:
+  - define them in the controller
+      - in our edit action, we have @album available.
+      - update: we will check if album is update successfully
+          - with a form: when they update the form they will be updating the album params_id
+          - redirect when complete
+          - else we render a new form for our update functionality
+          - then we should create our edit view:
+              - edit book and render form again.
+              - it will auto pre populated form with old content then we can edit and update!
+              - then we can add links to edit and delete:
+                  - go to show page
+                      - add a couple link to paths, edit: edit_album_path(album)
+                      - delete link, album_path(@album), method: :delete, and we will do a data confirm: "are you sure?".
+          - destroy functionality:
+              - get the album which we already have, then destroy it, redirect to root path cause show page does not exist cause its gone!
