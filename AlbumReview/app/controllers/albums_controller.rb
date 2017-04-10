@@ -3,6 +3,10 @@ class AlbumsController < ApplicationController
     @albums = Album.all.order("created_at DESC")
   end
 
+  def show
+    @album = Album.find(params[:id])
+  end
+
   def new
     @album = Album.new
   end
