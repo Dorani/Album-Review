@@ -164,3 +164,5 @@ Ruby on Rails Album Review App
     - define a before_action, to find our album, and only find album for specific actions.
     - create a show file in the views.
     - in this application, we will be creating our actions and then the corresponding view files always.
+    - in the show.html.erb render what we want.
+    - in our index to easily access the specific album details, we will create a link to the show path per specific album.
