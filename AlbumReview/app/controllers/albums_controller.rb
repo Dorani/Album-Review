@@ -1,4 +1,5 @@
 class AlbumsController < ApplicationController
+  before_action :find_album
   def index
     @albums = Album.all.order("created_at DESC")
   end
@@ -25,5 +26,9 @@ class AlbumsController < ApplicationController
 
   def album_params
     params.require(:album).permit(:title, :description, :author)
+  end
+
+  def find_album
+    @album = Album.find(params[:id])
   end
 end
