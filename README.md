@@ -174,16 +174,16 @@ Ruby on Rails Album Review App
           - with a form: when they update the form they will be updating the album params_id
           - redirect when complete
           - else we render a new form for our update functionality
-          - then we should create our edit view:
-              - edit book and render form again.
-              - it will auto pre populated form with old content then we can edit and update!
-              - then we can add links to edit and delete:
-                  - go to show page
-                      - add a couple link to paths, edit: edit_album_path(album)
-                      - delete link, album_path(@album), method: :delete, and we will do a data confirm: "are you sure?".
-          - destroy functionality:
+      - then we should create our edit view:
+          - edit book and render form again.
+          - it will auto pre populated form with old content then we can edit and update!
+      - then we can add links to edit and delete:
+          - go to show page
+              - add a couple link to paths, edit: edit_album_path(album)
+              - delete link, album_path(@album), method: :delete, and we will do a data confirm: "are you sure?".
+      - destroy functionality:
               - get the album which we already have, then destroy it, redirect to root path cause show page does not exist cause its gone!
-          - Now we should have an entire CRUD established.
+      - Now we should have an entire CRUD established.
 
 ## Next Steps:
   - Adding users to our apps:
