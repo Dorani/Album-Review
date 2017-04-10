@@ -183,9 +183,29 @@ Ruby on Rails Album Review App
               - delete link, album_path(@album), method: :delete, and we will do a data confirm: "are you sure?".
       - destroy functionality:
               - get the album which we already have, then destroy it, redirect to root path cause show page does not exist cause its gone!
-      - Now we should have an entire CRUD established.
+  - Now we should have an entire CRUD established.
 
 ## Next Steps:
   - Adding users to our apps:
       - using devise
   - Add categories for our nav bar to filter albums based on rap, rock, techno.
+
+## New Gems:
+  - www.rubygems.org:
+      - devise:
+          - user auth gem that allows users to sign and out into our application
+          - take the gemfile copy it to our gem files
+          - run bundle install
+      - rails generate devise:install
+          - install to our application
+      - now go to our layout file:
+          - yield tag: paste in alert and notice tabs. for signing in and out.
+      - rails generate devise:views
+          - style app with bootstrap
+          - so you should see devise views now.
+      - rails generate devise user
+          - creates our user model and table
+          - then we run rake db:migrate which will update our app
+          - restart server
+          - devise will create our routes for sign in out/up and out.
+          - check rake routes!
