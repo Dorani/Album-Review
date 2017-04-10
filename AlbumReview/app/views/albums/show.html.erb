@@ -1,3 +1,6 @@
 <h2><%= @album.title %></h2>
 <h3><%= @album.author %></h3>
 <p><%= @album.description %></p>
+
+<%= link_to "Edit", edit_album_path(@album) %>
+<%= link_to "Delete", album_path(@album), method: :delete, data: { confirm: "Are you sure?"} %>
