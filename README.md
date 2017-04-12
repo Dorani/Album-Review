@@ -209,3 +209,7 @@ Ruby on Rails Album Review App
           - restart server
           - devise will create our routes for sign in out/up and out.
           - check rake routes!
+
+## Adding nav bar:
+    - we will be adding it to the application.html.erb file in the layouts directory because this is common across every view in our navigation
+    - use bootstrap/components/nav bar/ choose one.
