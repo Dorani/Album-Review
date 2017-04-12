@@ -4,12 +4,12 @@
 
 <%= link_to "Back", root_path %>
 
-<% if user_signed_in? %>
+  <% if user_signed_in? %>
 
-  <% if @album.user_id == current_user.id %>
+    <% if @album.user_id == current_user.id %>
 
-  <%= link_to "Edit", edit_album_path(@album) %>
-  <%= link_to "Delete", album_path(@album), method: :delete, data: { confirm: "Are you sure?"} %>
+    <%= link_to "Edit", edit_album_path(@album) %>
+    <%= link_to "Delete", album_path(@album), method: :delete, data: { confirm: "Are you sure?"} %>
 
-<% end %>
-<% end %>
+    <% end %>
+  <% end %>
