@@ -213,3 +213,10 @@ Ruby on Rails Album Review App
 ## Adding nav bar:
     - we will be adding it to the application.html.erb file in the layouts directory because this is common across every view in our navigation
     - use bootstrap/components/nav bar/ choose one.
+    - go into the application html file:
+        - within the body:
+            - create a nav tag with a class of navbar-default
+            - create a div with a class of container: not ensure edges are not processing
+            - create a div with navbar header with a link to the root path
+            - rails can add html classes into ruby code, which is really cool.
+            
