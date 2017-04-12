@@ -255,3 +255,11 @@ Ruby on Rails Album Review App
     - an album belongs to a user
 - Go into user model:
     - user has many albums
+
+## Accessing the database
+- rails c:
+    - album.connection: establish connection to that specific database
+    - access specific albums: "@album = Album.last"
+    - changin a posted album to a specifc user_id then saving:
+        - @album.user_id = 1
+        - @album.save
