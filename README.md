@@ -263,3 +263,14 @@ Ruby on Rails Album Review App
     - changin a posted album to a specifc user_id then saving:
         - @album.user_id = 1
         - @album.save
+
+##Privacy:
+- We dont want a user that did not create an album able to edit or delete that album
+    - conditional in book show page
+    - if statement that checks if the album.user_id is equivalent to the current user id
+    - we want the links to appear
+    - if not they wont.
+- another if statement:
+    - if a user is signed in:
+    - check if a user is signed in:
+    - to be able to call methods and atr on specific albums.
