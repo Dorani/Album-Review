@@ -223,3 +223,7 @@ Ruby on Rails Album Review App
           - unordered list: navbar-nav
           - list item: sign up link and the path that corresponds is:
                 - new_user_registration_path
+      - if a user signed in, he/she should not see a sign in link, they will see logout
+          - if statement:
+              - if user signed in: link_to sign out tag: destroy user session with a method of delete
+              - else statement, if a user is not signed in, with a link_ to login: new user session path.
