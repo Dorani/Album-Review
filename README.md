@@ -231,3 +231,27 @@ Ruby on Rails Album Review App
           - new ul so that it has its own area floated to the right:
           - same styling as navbar-nav
           - same conditional, you have to have an account to post a new album.
+
+##Associations:
+
+- Next step here, is making sure that a created album is associated with a spefiic user after sign up.
+- go into rails console
+    - album
+    - we need to generate a migration:
+        - a way of updating the database without creating a new table/model
+        - rails generate migration add_user_id_to_albums user_id:integer
+        - then we get a migration file:
+            - changing/adding user id to album table
+        - rake db:migrate
+- go back into rails console, an album has a user id
+    - albums controller:
+        - we need to update new and create action
+        - current user is being built out from the current user
+        - same for create, but create is going to be taking album params
+
+- Adding associations: which is associating one model with another
+
+- Go into the album model first: models/album:
+    - an album belongs to a user
+- Go into user model:
+    - user has many albums
