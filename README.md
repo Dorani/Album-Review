@@ -232,7 +232,7 @@ Ruby on Rails Album Review App
           - same styling as navbar-nav
           - same conditional, you have to have an account to post a new album.
 
-##Associations:
+## Associations:
 
   - Next step here, is making sure that a created album is associated with a spefiic user after sign up.
   - go into rails console
@@ -264,7 +264,7 @@ Ruby on Rails Album Review App
           - @album.user_id = 1
           - @album.save
 
-##Privacy:
+## Privacy:
   - We dont want a user that did not create an album able to edit or delete that album
       - conditional in book show page
       - if statement that checks if the album.user_id is equivalent to the current user id
