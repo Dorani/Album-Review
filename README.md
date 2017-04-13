@@ -234,20 +234,20 @@ Ruby on Rails Album Review App
 
 ##Associations:
 
-- Next step here, is making sure that a created album is associated with a spefiic user after sign up.
-- go into rails console
-    - album
-    - we need to generate a migration:
-        - a way of updating the database without creating a new table/model
-        - rails generate migration add_user_id_to_albums user_id:integer
-        - then we get a migration file:
-            - changing/adding user id to album table
-        - rake db:migrate
+  - Next step here, is making sure that a created album is associated with a spefiic user after sign up.
+  - go into rails console
+      - album
+      - we need to generate a migration:
+          - a way of updating the database without creating a new table/model
+          - rails generate migration add_user_id_to_albums user_id:integer
+          - then we get a migration file:
+              - changing/adding user id to album table
+          - rake db:migrate
 - go back into rails console, an album has a user id
-    - albums controller:
-        - we need to update new and create action
-        - current user is being built out from the current user
-        - same for create, but create is going to be taking album params
+        - albums controller:
+            - we need to update new and create action
+            - current user is being built out from the current user
+            - same for create, but create is going to be taking album params
 
 - Adding associations: which is associating one model with another
 
@@ -257,20 +257,20 @@ Ruby on Rails Album Review App
     - user has many albums
 
 ## Accessing the database
-- rails c:
-    - album.connection: establish connection to that specific database
-    - access specific albums: "@album = Album.last"
-    - changin a posted album to a specifc user_id then saving:
-        - @album.user_id = 1
-        - @album.save
+  - rails c:
+      - album.connection: establish connection to that specific database
+      - access specific albums: "@album = Album.last"
+      - changin a posted album to a specifc user_id then saving:
+          - @album.user_id = 1
+          - @album.save
 
 ##Privacy:
-- We dont want a user that did not create an album able to edit or delete that album
-    - conditional in book show page
-    - if statement that checks if the album.user_id is equivalent to the current user id
-    - we want the links to appear
-    - if not they wont.
-- another if statement:
-    - if a user is signed in:
-    - check if a user is signed in:
-    - to be able to call methods and atr on specific albums.
+  - We dont want a user that did not create an album able to edit or delete that album
+      - conditional in book show page
+      - if statement that checks if the album.user_id is equivalent to the current user id
+      - we want the links to appear
+      - if not they wont.
+  - another if statement:
+      - if a user is signed in:
+      - check if a user is signed in:
+      - to be able to call methods and atr on specific albums.
