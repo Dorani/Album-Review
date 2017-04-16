@@ -274,3 +274,14 @@ Ruby on Rails Album Review App
       - if a user is signed in:
       - check if a user is signed in:
       - to be able to call methods and atr on specific albums.
+
+## New Category Model:
+  - We want to be able to filter by category type or genre in regards to the albums
+  - 1 thing, we want to go into our terminal;
+      - rails generate model Genre name:string
+      - we have the create genre table and model
+      - check it out in the migration files
+      - next we need to update our database:
+          - rake db:migrate
+      - we want to associate an album with a genre/category id
+      - rails generate migration add_category_id_to_albums category_id:integer
