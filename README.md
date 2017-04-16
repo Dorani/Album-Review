@@ -294,4 +294,6 @@ Ruby on Rails Album Review App
 ## Rails console
   - Make sure category_id is part of our album model
   - rails c:
-      - 
+      - album.connection
+      - album:
+          - you should see that category_id is part of our album model!
