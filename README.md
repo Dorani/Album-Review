@@ -227,9 +227,9 @@ Ruby on Rails Album Review App
           - list item: sign up link and the path that corresponds is:
           - new_user_registration_path
       + if a user signed in, he/she should not see a sign in link, they will see logout
-          - if statement:
-              - if user signed in: link_to sign out tag: destroy user session with a method of delete
-              - else statement, if a user is not signed in, with a link_ to login: new user session path.
+          - conditional statement:
+          - if user signed in: link_to sign out tag: destroy user session with a method of delete
+          - else statement, if a user is not signed in, with a link_ to login: new user session path.
       + let's move the create album link into the nav bar:
           - new ul so that it has its own area floated to the right:
           - same styling as navbar-nav
