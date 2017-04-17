@@ -282,24 +282,26 @@ Ruby on Rails Album Review App
       - to be able to call methods and atr on specific albums.
 
 ## New Category Model:
-  - We want to be able to filter by category type or genre in regards to the albums
-  - 1 thing, we want to go into our terminal and type:
-      - rails generate model Genre/Category name:string
 
-  - We have the create genre/category table and model:
-  - check it out in the migration files
-  - next we need to update our database:
-      - rake db:migrate
+- We want to be able to filter by category type or genre in regards to the albums
+    - 1 thing, we want to go into our terminal and type:
+    - rails generate model Genre/Category name:string
 
-  - next, we want to associate an album with a genre/category id
-      - rails generate migration add_category_id_to_albums category_id:integer
-  - After you run that migration we need to:
-      - run rake db:migrate to update our database
-      - check out migration file
+- We have the create genre/category table and model:
+ check it out in the migration files
+
+- next we need to update our database:
+    - rake db:migrate
+
+- Next, we want to associate an album with a genre/category id
+    - rails generate migration add_category_id_to_albums category_id:integer
+    - After you run that migration we need to:
+        - run rake db:migrate to update our database
+        - check out migration file
 
 ## Rails console
   - Make sure category_id is part of our album model
   - rails c:
       - album.connection
       - album:
-          - you should see that category_id is part of our album model!
+          + you should see that category_id is part of our album model!
