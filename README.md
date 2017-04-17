@@ -41,27 +41,30 @@ Ruby on Rails Album Review App
 ## Start a new server:
 
 - in the same directory where all our work lives:
-- in command line: "rails s"
-- it creates a development viewing environment.
- - in browser go to localhost:3000 to see if rails server launch is successful.
+    - in command line: "rails s"
+    - it creates a development viewing environment.
+    - in browser go to localhost:3000 to see if rails server launch is successful.
 
 ## Controllers in ruby on rails:
 
 - House for all the actions, new create, edit, update, delete..
-- Actions will correspond to the views
--"rails generate controller Albums" controller names are plural
+    - Actions will correspond to the views
+    - "rails generate controller Albums" controller names are plural
+
 - it will create our controller file, test files, view templates for albums.
 
 ## Define Routes:
 
-- Routes correspond to the urls we visit.
+- Routes correspond to the urls we visit
 - type in rake routes in terminal to see which routes we have
+
 - we will create a restful route:
-  - a single line command that generates all the corresponding url we need for a specific controller.
-- in the routes.rb file, type in the following after do: resources:albums.
-  - instead of declaring seperate routes for our index, show, edit, delete , new , update actions, a resourceful route declares them in a single line: resources:albums
+    - a single line command that generates all the corresponding url we need for a specific controller.
+    - in the routes.rb file, type in the following after do: resources:albums.
+    - instead of declaring seperate routes for our index, show, edit, delete , new , update actions, a resourceful route declares them in a single line: resources:albums
+
 - then run in the terminal: "rake Routes"
-  - this will create our restful routes, and root path which will display all of our albums.
+    - this will create our restful routes, and root path which will display all of our albums.
 
 - next, in the routes.rb file, we should define our root path and make it correspond to albums#index action. Below line 2 input the following:
     - root 'albums#index'
@@ -136,8 +139,7 @@ Ruby on Rails Album Review App
 
 - go back to our create action in our controller:
     - add conditional statement, in the event that an album is created.
-    - redirect to the root path:
-        - index
+    - then redirect to the root path:
     - if not saved, we will render a new form.
     - album created, to check that we can go into our rails console by typing rails c:
         - Album.connection
@@ -171,21 +173,22 @@ Ruby on Rails Album Review App
     - in our index to easily access the specific album details, we will create a link to the show path per specific album.
 
 ## Edit/Update and Destroy Albums:
-  - define them in the controller
-      - in our edit action, we have @album available.
-      - update: we will check if album is update successfully
-          - with a form: when they update the form they will be updating the album params_id
-          - redirect when complete
-          - else we render a new form for our update functionality
-      - then we should create our edit view:
-          - edit book and render form again.
-          - it will auto pre populated form with old content then we can edit and update!
-      - then we can add links to edit and delete:
-          - go to show page
-          - add a couple link to paths, edit: edit_album_path(album)
-          - delete link, album_path(@album), method: :delete, and we will do a data confirm: "are you sure?".
-      - destroy functionality:
-          - get the album which we already have, then destroy it, redirect to root path cause show page does not exist cause its gone!
+
+- define them in the controller
+    - in our edit action, we have @album available.
+    - update: we will check if album is update successfully
+        - with a form: when they update the form they will be updating the album params_id
+        - redirect when complete
+        - else we render a new form for our update functionality
+    - then we should create our edit view:
+        - edit book and render form again.
+        - it will auto pre populated form with old content then we can edit and update!
+    - then we can add links to edit and delete:
+        - go to show page
+        - add a couple link to paths, edit: edit_album_path(album)
+        - delete link, album_path(@album), method: :delete, and we will do a data confirm: "are you sure?".
+    - destroy functionality:
+        - get the album which we already have, then destroy it, redirect to root path cause show page does not exist cause its gone!
   - Now we should have an entire CRUD established.
 
 ## Next Steps:
