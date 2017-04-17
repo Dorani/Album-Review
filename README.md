@@ -142,7 +142,7 @@ Ruby on Rails Album Review App
     - album created, to check that we can go into our rails console by typing rails c:
         - Album.connection
         - @album = Album.first:
-            - we should see all the details on our 1st album created.
+        - we should see all the details on our 1st album created.
 
 ## Displaying albums on index
 
@@ -158,9 +158,12 @@ Ruby on Rails Album Review App
 ## New action
 
 - now, we will define a new action called show:
+
     - to show an album we will first need to find the album by params_id
     - we will be finding the album in our show action, and in other types of actions as well such as update, edit and destroy functionality
-    - so to make code more dry, we should refactor the code and define a method called find_album in our private method area.
+
+- so to make code more dry, we should refactor the code and define a method called find_album in our private method area.
+
     - define a before_action, to find our album, and only find album for specific actions.
     - create a show file in the views.
     - in this application, we will be creating our actions and then the corresponding view files always.
@@ -179,10 +182,10 @@ Ruby on Rails Album Review App
           - it will auto pre populated form with old content then we can edit and update!
       - then we can add links to edit and delete:
           - go to show page
-              - add a couple link to paths, edit: edit_album_path(album)
-              - delete link, album_path(@album), method: :delete, and we will do a data confirm: "are you sure?".
+          - add a couple link to paths, edit: edit_album_path(album)
+          - delete link, album_path(@album), method: :delete, and we will do a data confirm: "are you sure?".
       - destroy functionality:
-              - get the album which we already have, then destroy it, redirect to root path cause show page does not exist cause its gone!
+          - get the album which we already have, then destroy it, redirect to root path cause show page does not exist cause its gone!
   - Now we should have an entire CRUD established.
 
 ## Next Steps:
@@ -214,20 +217,20 @@ Ruby on Rails Album Review App
 - we will be adding it to the application.html.erb file in the layouts directory because this is common across every view in our navigation
   - use bootstrap/components/nav bar/ choose one.
   - go into the application html file:
-      - within the body:
+      + within the body:
           - create a nav tag with a class of navbar-default
           - create a div with a class of container: not ensure edges are not processing
           - create a div with navbar header with a link to the root path
           - rails can add html classes into ruby code, which is really cool.
-      - add our links:
+      + add our links:
           - unordered list: navbar-nav
           - list item: sign up link and the path that corresponds is:
-                - new_user_registration_path
-      - if a user signed in, he/she should not see a sign in link, they will see logout
+          - new_user_registration_path
+      + if a user signed in, he/she should not see a sign in link, they will see logout
           - if statement:
               - if user signed in: link_to sign out tag: destroy user session with a method of delete
               - else statement, if a user is not signed in, with a link_ to login: new user session path.
-      - let's move the create album link into the nav bar:
+      + let's move the create album link into the nav bar:
           - new ul so that it has its own area floated to the right:
           - same styling as navbar-nav
           - same conditional, you have to have an account to post a new album.
