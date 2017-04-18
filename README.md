@@ -333,3 +333,25 @@ Ruby on Rails Album Review App
   - let's add category in the show page:
       - show.html
       - @album.category.name add as an h4
+- We now just need to add the same thing we added to the new action, maping of categories to the new and edit action.
+- And for update, we pass in what we passed into create.
+
+## Edit action
+- we want to make sure a category is filled in when we hit on edit form:
+     - copy form partial and add it into our edit view
+     - change the select type: category_id and @categories
+     - add the multipart
+     - that will fill in the category select when we edit
+
+## Dropdown for Categories:
+  - application layout files
+  - add Dropdown
+      - li class of dropdown
+      - ancher with class of dropdown toggle
+      - these are all bootstrap classes by the way
+      - role of botton
+      - categories:
+           - span class of caret with our list of categories which will be an ul.
+      - loop through, for each, category and list them
+      - link_to category.name and go to the album path, index page.
+      - pass the name of the category to url as params, then filter it out
