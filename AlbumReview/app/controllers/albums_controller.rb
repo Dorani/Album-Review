@@ -15,6 +15,7 @@ class AlbumsController < ApplicationController
 
   def create
     @album = current_user.albums.build(album_params)
+    @album.category_id = params[:category_id]
 
     if @album.save
       redirect_to root_path
