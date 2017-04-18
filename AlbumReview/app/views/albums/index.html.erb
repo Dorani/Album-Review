@@ -1,4 +1,4 @@
-<h2 class="current-category"><%= params[:category] %></h2>
+<h3 class="current-category"><%= params[:category] %></h3>
 
 <% @albums.each do |album| %>
 <h4> <%= link_to album.title, album_path(album) %> </h4>
