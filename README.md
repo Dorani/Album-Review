@@ -355,3 +355,14 @@ Ruby on Rails Album Review App
       - loop through, for each, category and list them
       - link_to category.name and go to the album path, index page.
       - pass the name of the category to url as params, then filter it out
+
+## Controllers
+
+  - go into albums Controllers
+  - in the index action
+       -  add a conditional:
+       - if the category params that we passed were blank then we want to display all the books cause we are not filtering
+       - else, if we pass params in, we will display those specific albums
+       - finding the name that is being past into the params, getting the id that we are passing in when we hit the dropdown
+       - we will display the album where the category_id = the category_id attribute and order it by createat dec.
+  - end the if conditional
