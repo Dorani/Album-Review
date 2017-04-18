@@ -366,3 +366,5 @@ Ruby on Rails Album Review App
        - finding the name that is being past into the params, getting the id that we are passing in when we hit the dropdown
        - we will display the album where the category_id = the category_id attribute and order it by createat dec.
   - end the if conditional
+  - we just want to be able to know so lets make some edits to our index:
+      - <h2 class="current-category"><%= params[:category] %></h2>
