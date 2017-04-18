@@ -330,3 +330,6 @@ Ruby on Rails Album Review App
   - see if categories are rendered
   - Last thing we need to do is update the album params to also permit category_id or it will not SET category_id
   - in our private methods add category_id to the require params for album.
+  - let's add category in the show page:
+      - show.html
+      - @album.category.name add as an h4
