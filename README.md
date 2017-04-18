@@ -305,3 +305,28 @@ Ruby on Rails Album Review App
       - album.connection
       - album:
           + you should see that category_id is part of our album model!
+## Selecting Categories:
+  - We now need a way to select a category when an album is created
+  - album controller:
+      - add a way to access categories when we create a new album:
+      - in the "new" action @categories = Category.all.map{|c| [c.name, c.id]}
+      - then go into our new.html:
+          - add a way to select a category:
+          - select tag, and select category id, and set options will select all the categories we will have
+          - rap, rock, techno
+          - :prompt = select a category
+          - check it out now
+  - associate an album with a category id:
+      - in the create action we @album.category_id = params[:category_id]
+      - set @album category_id attribute to the category id that its passed in when we submit the form
+  - we need to add categories so we will need to go in our console
+      - rails console
+      - Category.connection
+      - Category.create(name: "Rap")
+      - Category.create(name: "Rock")
+      - Category.create(name: "Techno")
+      - Category.all to see all the created and saved categories
+  - now go back into add album
+  - see if categories are rendered
+  - Last thing we need to do is update the album params to also permit category_id or it will not SET category_id
+  - in our private methods add category_id to the require params for album.
