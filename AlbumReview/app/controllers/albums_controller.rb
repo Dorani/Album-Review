@@ -10,6 +10,7 @@ class AlbumsController < ApplicationController
 
   def new
     @album = current_user.albums.build
+    @categories = Category.all.map{ |c| [c.name, c.id] }
   end
 
   def create
