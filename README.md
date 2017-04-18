@@ -373,5 +373,5 @@ Ruby on Rails Album Review App
 ## New Gems!
 
   - we want to be able to render just the pictures of the albums on our index
-  - back to www.rubygems.org
-      - 
+  - visit: www.rubygems.org and type in paperclip
+      - gemfile
