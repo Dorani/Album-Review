@@ -1,4 +1,5 @@
 <%= simple_form_for @album do |f| %>
+  <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a Category") %>
   <%= f.input :title, label: "Album Title" %>
   <%= f.input :description %>
   <%= f.input :author %>
