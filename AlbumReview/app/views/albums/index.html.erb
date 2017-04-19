@@ -4,12 +4,12 @@
 <h3> There are no books currently in this category </h3>
 <% else %>
 <div class="row">
-  <% @albums.each do |album| %>
-  <div class="col-md-3">
-  <a href="/albums/<%= album.id %>">
-    <%= image_tag album.album_img.url(:album_index) %>
-  </a>
-  </div>
-  <% end %>
+    <% @albums.each do |album| %>
+    <div class="col-md-3">
+    <a href="/albums/<%= album.id %>">
+      <%= image_tag album.album_img.url(:album_index), class:"album"%>
+    </a>
+    </div>
+    <% end %>
 </div>
 <% end %>

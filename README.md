@@ -429,3 +429,8 @@ Ruby on Rails Album Review App
       - wrap all the content in a div of a class of container
       - centers content a lot nicer
       - you should see some margin on right and left
+
+  - now, if you feel like your image sizing is off on the index, do the following:
+      - , class:"album" at the end of your image tag
+      - then app.css.scss:
+          - .album height and width.
