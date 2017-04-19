@@ -394,5 +394,17 @@ Ruby on Rails Album Review App
     - Now, we want to look at migrations:
         - add attachment
         - and remove
-        - rails generate paperclip Album album_img
-        
+        - rails generate paperclip Album album_img:
+        - album_img corresponds to the name of the attached file we added in our album.rb
+        - now let's update our database with rake db:migrate
+
+## Uploading Pics functionality:
+
+  - file filed below category
+  - browze and Uploading
+  - go into the form partial
+  - below the category id we will add a file field tag, and it will get the album img
+  - then add the same thing to the edit file
+  - now in the a;bum controller go into the album params and permit the album img as well
+  - now we should be able to add an img to an album.
+  
