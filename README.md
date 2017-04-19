@@ -407,4 +407,13 @@ Ruby on Rails Album Review App
   - then add the same thing to the edit file
   - now in the a;bum controller go into the album params and permit the album img as well
   - now we should be able to add an img to an album.
-  
+
+## Views
+
+  - the next major thing here is we want to be able to see the img of the album and click on it to be redirected to the show page.
+      - go into our index file, which is where we display our titles
+      - instead of linking to the album titles
+      - we will create an anchor tag which will link to the show page url for an album /album/id
+      - that instance of album show page
+      - then an image tag
+          - album.album_img.url(:album_index).

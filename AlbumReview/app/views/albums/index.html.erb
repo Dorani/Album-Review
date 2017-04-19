@@ -4,6 +4,8 @@
 <h3> There are no books currently in this category </h3>
 <% else %>
   <% @albums.each do |album| %>
-    <h4> <%= link_to album.title, album_path(album) %> </h4>
+  <a href="/albums/<%= album.id %>">
+    <%= image_tag album.album_img.url(:album_index) %>
+  </a>
   <% end %>
 <% end %>
