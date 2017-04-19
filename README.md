@@ -373,5 +373,26 @@ Ruby on Rails Album Review App
 ## New Gems!
 
   - we want to be able to render just the pictures of the albums on our index
-  - visit: www.rubygems.org and type in paperclip
+  - visit: www.rubygems.org and type in "paperclip"
       - gemfile
+      - gem 'paperclip', '~> 5.1'
+      - bundle install so our app knows to use the paperclip gem
+      - now let's visit the documentation
+      - we need an image processor:
+          - homebrew can do it for us:
+          - brew install imagemagick
+          - in the terminal type in: "which convert"
+          - output: /usr/local/bin/convert
+          - config environment and paste inPaperclip.options[:command_path] = "/usr/local/bin/"
+          - helps paperclip know where to look for the imagemagick
+          - back to the docus and copy the quick start/model
+          - paste in our album.rb file below the associations and what it does is the following:
+              - defining the attached file
+              - we want to use album img instead of avatar
+              - the rest is styles in terms of sizing of images
+              - rename album_index and adjust px
+    - Now, we want to look at migrations:
+        - add attachment
+        - and remove
+        - rails generate paperclip Album album_img
+        
