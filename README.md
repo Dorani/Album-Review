@@ -434,3 +434,10 @@ Ruby on Rails Album Review App
       - , class:"album" at the end of your image tag
       - then app.css.scss:
           - .album height and width.
+
+  - now, we just need to display the album cover in the appropriate show.html file
+      - render it up top with the image tag and a class of "album-show"
+      - add styling to scss file for that specific class
+
+  - more adjusting to the show page:
+      - show page:
