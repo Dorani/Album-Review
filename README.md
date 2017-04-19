@@ -417,3 +417,15 @@ Ruby on Rails Album Review App
       - that instance of album show page
       - then an image tag
           - album.album_img.url(:album_index).
+
+## Styling and layout
+
+  - go into our index view
+      - wrap the list of albums in a div class of row
+      - wrap each album in a col-md-3
+      - 4 albums each side by side rendered
+
+  - now go into our application.html file:
+      - wrap all the content in a div of a class of container
+      - centers content a lot nicer
+      - you should see some margin on right and left
