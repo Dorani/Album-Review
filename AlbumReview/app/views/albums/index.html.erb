@@ -5,7 +5,7 @@
 <% else %>
 <div class="row">
   <% @albums.each do |album| %>
-  <div c;ass="col-md-3">
+  <div class="col-md-3">
   <a href="/albums/<%= album.id %>">
     <%= image_tag album.album_img.url(:album_index) %>
   </a>
