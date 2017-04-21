@@ -451,3 +451,10 @@ Ruby on Rails Album Review App
       - give a review and a comment!
       - then we run rake db migrate to update our db
       - check out the migration file in the db directory
+      - model directory, reviews.rb represents our reviews model
+
+  - now, what we want to do is add a user_id to reviews, we want create the associations
+      - rails generate migration add_user_id_to_reviews user_id:integer
+      - what this does is generates a migration which updates our database and adding a user_id to reviews and user_id is an integer
+      - then rake db:migrate
+      - check out migration file
