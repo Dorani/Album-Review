@@ -9,7 +9,7 @@ Ruby on Rails Album Review App
 - Cd into the directory.
 
 ## Models and Attributes:
-- we will need to create a rails model to represent each book:
+- we will need to create a rails model to represent each album:
 - they are essentially objects.
 
 - our albums will have the following Attributes:
@@ -181,7 +181,7 @@ Ruby on Rails Album Review App
         - redirect when complete
         - else we render a new form for our update functionality
     - then we should create our edit view:
-        - edit book and render form again.
+        - edit album and render form again.
         - it will auto pre populated form with old content then we can edit and update!
     - then we can add links to edit and delete:
         - go to show page
@@ -272,7 +272,7 @@ Ruby on Rails Album Review App
 
 ## Privacy:
   - We dont want a user that did not create an album able to edit or delete that album
-      - conditional in book show page
+      - conditional in album show page
       - if statement that checks if the album.user_id is equivalent to the current user id
       - we want the links to appear
       - if not they wont.
@@ -361,7 +361,7 @@ Ruby on Rails Album Review App
   - go into albums Controllers
   - in the index action
        -  add a conditional:
-       - if the category params that we passed were blank then we want to display all the books cause we are not filtering
+       - if the category params that we passed were blank then we want to display all the albums cause we are not filtering
        - else, if we pass params in, we will display those specific albums
        - finding the name that is being past into the params, getting the id that we are passing in when we hit the dropdown
        - we will display the album where the category_id = the category_id attribute and order it by createat dec.
