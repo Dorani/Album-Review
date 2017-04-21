@@ -444,3 +444,10 @@ Ruby on Rails Album Review App
       - wrap content in a div
 
 ## Reviews!
+
+  - creating a review model;
+      - terminal:
+      - rails generate model Rreview rating:integer comment:text
+      - give a review and a comment!
+      - then we run rake db migrate to update our db
+      - check out the migration file in the db directory
