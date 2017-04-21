@@ -462,3 +462,7 @@ Ruby on Rails Album Review App
   - now, we want to add album_id to reviews, so an album can have many reviews and a review is associated with that specific album:
       - rails generate migration add_album_id_to_reviews album_id:integer
       - rake db:migrate
+
+## Associations between models
+
+    -
