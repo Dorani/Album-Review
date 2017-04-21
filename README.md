@@ -457,4 +457,8 @@ Ruby on Rails Album Review App
       - rails generate migration add_user_id_to_reviews user_id:integer
       - what this does is generates a migration which updates our database and adding a user_id to reviews and user_id is an integer
       - then rake db:migrate
-      - check out migration file
+      - check out migration file/ adding user_id to reviews
+
+  - now, we want to add album_id to reviews, so an album can have many reviews and a review is associated with that specific album:
+      - rails generate migration add_album_id_to_reviews album_id:integer
+      - rake db:migrate
