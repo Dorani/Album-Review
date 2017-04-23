@@ -1,8 +1,8 @@
 <%= simple_form_for @album, :html => { :multipart => true} do |f| %>
   <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a Category") %>
-  <%= f.file_field :album_img %>
+  <%= f.file_field :album_img, :style => 'padding-top: 14px',:class => 'btn-custom2' %>
   <%= f.input :title, label: "Album Title" %>
   <%= f.input :description %>
   <%= f.input :author %>
-  <%= f.button :submit %>
+  <%= f.button :submit, :class => 'btn-custom2' %>
 <% end %>
