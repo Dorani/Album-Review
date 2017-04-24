@@ -1,2 +1,5 @@
 <p><%= review.rating %></p>
 <p><%= review.comment %></p>
+
+<%= link_to "Edit", edit_album_review_path(review.album, review) %>
+<%= link_to "Delete", album_review_path(review.album, review), method: :delete, data:{confim: "Are you sure?"} %>

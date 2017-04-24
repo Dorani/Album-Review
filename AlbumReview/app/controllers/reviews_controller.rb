@@ -30,6 +30,11 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def destroy
+    @review.destroy
+    redirect_to album_path(@album)
+  end
+
   private
     def review_params
       params.require(:review).permit(:rating, :comment)
