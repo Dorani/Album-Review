@@ -481,3 +481,10 @@ Ruby on Rails Album Review App
       - do loop, inside resources :reviews
       - basically, we are putting the restful resource that is reviews inside albums
       - we will nest reviews inside our albums essentially.
+
+## Creating Review functionality
+  - we dont have a controller yet for our reviews:
+      - rails generate controllers Reviews:
+      - hop in
+      - add ability to create new
+      - very similar to our album controller
