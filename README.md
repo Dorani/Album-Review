@@ -465,9 +465,12 @@ Ruby on Rails Album Review App
 
 ## Associations between models
 
-    - model/review.rb
-        - a review belongs_to :book, user
-    - model/user.rb
-        - has_many :reviews
-    - model/album.rb
-        - has_many :reviews
+  - model/review.rb
+      - a review belongs_to :book, user
+  - model/user.rb
+      - has_many :reviews
+  - model/album.rb
+      - has_many :reviews
+
+
+## Nested Routes:
