@@ -490,3 +490,12 @@ Ruby on Rails Album Review App
       - very similar to our album controller
       - permit the name review and the attributes in our private method
       - in create, if the review saves, redirect to album path.
+
+  - @album not defined just yet, but thats next.
+      - we want, for all the methods, all of our reviews will be made in respect to an album
+      - so we want to be able to access the @album instance variable in rewiews
+      - in our private
+          - def find_album
+          - finding the current album, that the review is going to be associated with by album_id
+  - in create
+      - set the album id attribute to the current album id value
