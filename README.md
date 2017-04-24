@@ -474,3 +474,10 @@ Ruby on Rails Album Review App
 
 
 ## Nested Routes:
+
+  - A way of representing a belongs_to and has_many relationship:
+      - config/locales/routes.rb
+      - generating the restful resource for our albums
+      - do loop, inside resources :reviews
+      - basically, we are putting the restful resource that is reviews inside albums
+      - we will nest reviews inside our albums essentially.
