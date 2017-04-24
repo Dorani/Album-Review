@@ -519,13 +519,13 @@ Ruby on Rails Album Review App
           - inside the div, we will add a link_to tag, corresponds to the new_album_review_path with respect to the current album
 
 ## Output Reviews
-    - views/albums created a new review partial
-        - review.html.erb:
-        - we want to render its reviews
-        - the review partial will provide the structure for each instance of the reviews its going to Output
-        - render ALL reviews and the partial will dictate the structure
-        - review.rating and review.comment
-        - it should appear
+  - views/albums created a new review partial
+      - review.html.erb:
+      - we want to render its reviews
+      - the review partial will provide the structure for each instance of the reviews its going to Output
+      - render ALL reviews and the partial will dictate the structure
+      - review.rating and review.comment
+      - it should appear
 
 ## Edit and Update Reviews
   - edit: find the review
