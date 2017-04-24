@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  before_action :find_album
 
   def new
     @review = Review.new
@@ -13,11 +14,15 @@ class ReviewsController < ApplicationController
       redirect_to album_path(@album)
     else
       render 'new'
+    end
   end
 
   private
     def review_params
       params.require(:review).permit(:rating, :comment)
+    end
+    def find_album
+      @album = Album.find(params[:album_id])
     end
 
 end
