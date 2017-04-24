@@ -447,7 +447,7 @@ Ruby on Rails Album Review App
 
   - creating a review model;
       - terminal:
-      - rails generate model Rreview rating:integer comment:text
+      - rails generate model Review rating:integer comment:text
       - give a review and a comment!
       - then we run rake db migrate to update our db
       - check out the migration file in the db directory
@@ -465,4 +465,9 @@ Ruby on Rails Album Review App
 
 ## Associations between models
 
-    -
+    - model/review.rb
+        - a review belongs_to :book, user
+    - model/user.rb
+        - has_many :reviews
+    - model/album.rb
+        - has_many :reviews
