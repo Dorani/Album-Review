@@ -547,3 +547,9 @@ Ruby on Rails Album Review App
       - def destroy
       - @review.destroy
       - redirect to album path in respect to @album
+
+  - filter to allow only currently signed in users can edit or delete reviews they created
+      - review.html.erb
+      - if user is signed in, if they are we will check to see if the review user.id = current user.id
+
+    
