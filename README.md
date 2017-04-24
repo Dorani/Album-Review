@@ -539,3 +539,11 @@ Ruby on Rails Album Review App
       - input for rating and comment and let's create the submit button
 
   - review partial file now, lets add edit and delete buttons with respect to review.album
+      - review partial file file so its rendered in each instance of the review
+      - 2 more link_to tags, edit, edit_album_path, takes 2 params = review.album and review
+      - delete tag, album_review_path with 2 params and confirmation
+
+  - delete functionality:
+      - def destroy
+      - @review.destroy
+      - redirect to album path in respect to @album
