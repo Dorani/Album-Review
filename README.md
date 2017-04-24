@@ -484,7 +484,9 @@ Ruby on Rails Album Review App
 
 ## Creating Review functionality
   - we dont have a controller yet for our reviews:
-      - rails generate controllers Reviews:
+      - rails generate controller Reviews:
       - hop in
       - add ability to create new
       - very similar to our album controller
+      - permit the name review and the attributes in our private method
+      - in create, if the review saves, redirect to album path.
