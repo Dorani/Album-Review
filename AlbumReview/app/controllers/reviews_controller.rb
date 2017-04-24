@@ -6,6 +6,8 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new(review_params)
+    @review.album_id = @album.id
+    @review.user_id = current_user.id
 
     if @review.save
       redirect_to album_path(@album)
