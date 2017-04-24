@@ -499,3 +499,21 @@ Ruby on Rails Album Review App
           - finding the current album, that the review is going to be associated with by album_id
   - in create
       - set the album id attribute to the current album id value
+      - go into rails console to see if the associations have been made.
+
+## Form Partials
+
+  - views/reviews/newfile/form.html.erb
+  - simple_form
+      - with nested resources:
+      - pass in to diff parameters:
+          - @album and @album.reviews.build
+          - the 1st one gets the current instance of the album
+          - the 2nd will build the review from that specific album
+          - f.input for the rating, comment, button
+  - new.html.erb
+      - render form
+      - link on the album show page so we can click on a button and add a review
+      - album show page
+          - inside the place holder col-md-4 area we will add another div
+          - inside the div, we will add a link_to tag, corresponds to the new_album_review_path with respect to the current album
