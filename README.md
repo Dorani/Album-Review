@@ -526,3 +526,16 @@ Ruby on Rails Album Review App
         - render ALL reviews and the partial will dictate the structure
         - review.rating and review.comment
         - it should appear
+
+## Edit and Update Reviews
+  - edit: find the review
+  - update: same conditional of @album
+  - render edit
+  - make sure we refactor code so it can be called for edit, update and destroy
+  - add another before_action
+      - find_review for edit update and destroy
+  - go to reviews, and create the edit.html.erb
+      - simple_form_for 2 parameters, @album and @review do f
+      - input for rating and comment and let's create the submit button
+
+  - review partial file now, lets add edit and delete buttons with respect to review.album
