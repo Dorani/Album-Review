@@ -580,7 +580,7 @@ Ruby on Rails Album Review App
 
 
 ## Average rating
-    - album controller
+- album controller
     - show action
         - conditional, if a album has no reviews
         - set an instance var called avg review and set to 0
