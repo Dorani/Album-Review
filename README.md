@@ -553,30 +553,30 @@ Ruby on Rails Album Review App
       - if user is signed in, if they are we will check to see if the review user.id = current user.id
 
 ## Star Rating jQuery Plugin
-    - raty.js
-        - npm install raty-js
-        - move the 3 images into assets/images
-        - move raty.js file into assets/javascript
+- raty.js
+    - npm install raty-js
+    - move the 3 images into assets/images
+    - move raty.js file into assets/javascript
 
-    - now, add a div in review.html.erb
-        - add a div
-        - represent the 5 stars
-        - remove the review.rating tag
+- now, add a div in review.html.erb
+    - add a div
+    - represent the 5 stars
+    - remove the review.rating tag
             - replacing with empty div tag, class review rating, data score attribute, review.rating
 
-    - now, go back to our show view in album
+- now, go back to our show view in album
     - paste in the raty script tag
-        - targer the class we have over review rating
-        - its a read only value
-        - perform all the raty magic behind the scenes
+    - target the class we have over review rating
+    - its a read only value
+    - perform all the raty magic behind the scenes
 
 
-    - now, we want to be able to not type in the number of stars but click on stars representing our review.
-        - form partial
+- now, we want to be able to not type in the number of stars but click on stars representing our review.
+    - form partial
         - wrap the input in a div tag
             - id rating-form
             - add a script tag
-                - input rating as stars.
+            - input rating as stars.
 
 
 ## Average rating
