@@ -1,63 +1,83 @@
 <div class="row">
-  <div class="col-md-4">
 
-    <%= image_tag @album.album_img.url(:album_show), class: "album-show" %>
+	<div class="col-md-4">
 
-  </div>
+		<%= image_tag @album.album_img.url(:album_show), class: "album-show" %>
 
-  <div class="col-med-8">
-  <h2><%= @album.title %></h2>
-  <h3><%= @album.author %></h3>
-  <h4>Average Rating</h4>
-  <div class="average-review-rating" data-score=<%= @average_review %>></div>
-  <span>Based on <%= @album.reviews.count %> reviews </span><br>
+	</div>
 
-  <p><%= @album.description %></p>
-  </div>
+	<div class="col-md-8">
+
+		<div class="album-info">
+
+			<h2 class="album-title"><%= @album.title %></h2>
+			<h3 class="album-author"><span>From</span> <%= @album.author %></h3>
+			<h2 class="avg-rating">Average Rating</h2>
+			<div class="average-review-rating" data-score=<%= @average_review %>></div>
+			<span class="number-of-reviews">Based on <%= @album.reviews.count %> reviews</span>
+			<p class="album-desc"><%= @album.description %></p>
+
+		</div>
+	</div>
+
 
 </div>
 
 <div class="row">
-  <div class="col-md-4">
-    <!-- where reviews/ratings will go -->
-    <%= render @album.reviews %>
 
-  <div>
-    <%= link_to "Add Review", new_album_review_path(@album)%>
-  </div>
+	<div class="col-md-4">
 
-  </div>
+		<div class="reviews">
+
+			<!-- Where the reviews/ratings will go -->
+			<h1>Reviews</h1>
+			<%= render @album.reviews %>
+
+			<div>
+				<%= link_to "Add Review", new_album_review_path(@album), class: "btn-custom" %>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="links btn-group">
+
+	<%= link_to "Back", root_path, class: "btn btn-custom" %>
+
+	<% if user_signed_in? %>
+
+		<% if @album.user_id == current_user.id %>
+
+			<%= link_to "Edit", edit_album_path(@album), class: "btn btn-custom" %>
+			<%= link_to "Delete", album_path(@album), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
+
+		<% end %>
+
+	<% end %>
+
 </div>
 
 
-<%= link_to "Back", root_path %>
+<script>
+	$('.review-rating').raty({
+		readOnly: true,
+		score: function() {
+			return $(this).attr('data-score');
+		},
+		path: '/assets/'
+	});
+</script>
 
-  <% if user_signed_in? %>
 
-    <% if @album.user_id == current_user.id %>
-
-    <%= link_to "Edit", edit_album_path(@album) %>
-    <%= link_to "Delete", album_path(@album), method: :delete, data: { confirm: "Are you sure?"} %>
-
-    <% end %>
-  <% end %>
-
-  <script>
-  $('.review-rating').raty({
-    readOnly: true,
-    score: function() {
-      return $(this).attr('data-score');
-    },
-    path: '/assets/'
-  });
-  </script>
-
-  <script>
-  $('.average-review-rating').raty({
-    readOnly: true,
-      path: '/assets/',
-    score: function() {
-      return $(this).attr('data-score');
-    }
-  });
-  </script>
+<script>
+	$('.average-review-rating').raty({
+		readOnly: true,
+		path: '/assets/',
+		score: function() {
+			return $(this).attr('data-score')
+		}
+	});
+</script>
