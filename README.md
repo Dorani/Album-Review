@@ -596,7 +596,7 @@ Ruby on Rails Album Review App
         - add a span tag that says based on @album.review.count
 
 ## Authentication
-    - albums controller
+- albums controller
     - before_action:
         - authenticate_user, only on the new and edit pages
         - do the same for reviews
