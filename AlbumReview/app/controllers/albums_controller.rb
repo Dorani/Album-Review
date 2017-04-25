@@ -10,7 +10,11 @@ class AlbumsController < ApplicationController
   end
 
   def show
-
+    if @album.reviews.blank?
+      @average_review = 0
+    else
+      @average_review = @album.reviews.average(:rating).round(2)
+    end
   end
 
   def new
