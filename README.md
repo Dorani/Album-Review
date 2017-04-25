@@ -589,4 +589,17 @@ Ruby on Rails Album Review App
         - below the author but above description
         - h2, avg rating
         - div right below with a class of avg review rating with a data score of avr review variable
-    
+        - script tag, responsible for read only.
+
+    - show page
+        - we want users to be able to see the average score/per users
+        - add a span tag that says based on @album.review.count
+
+## Authentication
+    - albums controller
+    - before_action:
+        - authenticate_user, only on the new and edit pages
+        - do the same for reviews
+    - before_action
+        - authenticate_user, only for :new and edit reviews
+        
