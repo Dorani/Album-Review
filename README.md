@@ -563,3 +563,10 @@ Ruby on Rails Album Review App
         - represent the 5 stars
         - remove the review.rating tag
             - replacing with empty div tag, class review rating, data score attribute, review.rating
+
+    - now, go back to our show view in album
+    - paste in the raty script tag
+        - targer the class we have over review rating
+        - its a read only value
+        - perform all the raty magic behind the scenes
+        
