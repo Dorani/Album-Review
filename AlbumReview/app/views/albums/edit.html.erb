@@ -1,10 +1,16 @@
-<h1>Edit Album</h1>
-<%= simple_form_for @album, :html => { :multipart => true} do |f| %>
-  <%= f.select :category_id, @categories %>
-  <%= f.file_field :album_img, :style => 'padding-top: 14px',:class => 'btn-custom2'%>
-  <br>
-  <%= f.input :title, label: "Album Title" %>
-  <%= f.input :description %>
-  <%= f.input :author %>
-  <%= f.button :submit %>
+<div class="col-md-6 col-md-offset-3"
+
+    <div class="edit-album-form"
+
+    <h1>Edit Album</h1>
+    <%= simple_form_for @album, :html => { :multipart => true} do |f| %>
+      <%= f.select :category_id, @categories %>
+      <%= f.file_field :album_img, :style => 'padding-top: 14px',:class => 'btn-custom2'%>
+      <br>
+      <%= f.input :title, label: "Album Title" %>
+      <%= f.input :description %>
+      <%= f.input :author %>
+      <%= f.button :submit, :class => "btn-custom2" %>
 <% end %>
+
+</div>
