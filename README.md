@@ -569,4 +569,24 @@ Ruby on Rails Album Review App
         - targer the class we have over review rating
         - its a read only value
         - perform all the raty magic behind the scenes
-        
+
+
+    - now, we want to be able to not type in the number of stars but click on stars representing our review.
+        - form partial
+        - wrap the input in a div tag
+            - id rating-form
+            - add a script tag
+                - input rating as stars.
+
+
+## Average rating
+    - album controller
+    - show action
+        - conditional, if a album has no reviews
+        - set an instance var called avg review and set to 0
+        - if not 0, it will avg based off rating Attributes
+    - show page
+        - below the author but above description
+        - h2, avg rating
+        - div right below with a class of avg review rating with a data score of avr review variable
+    
