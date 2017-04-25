@@ -559,3 +559,7 @@ Ruby on Rails Album Review App
         - move raty.js file into assets/javascript
 
     - now, add a div in review.html.erb
+        - add a div
+        - represent the 5 stars
+        - remove the review.rating tag
+            - replacing with empty div tag, class review rating, data score attribute, review.rating
