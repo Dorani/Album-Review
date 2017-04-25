@@ -552,4 +552,10 @@ Ruby on Rails Album Review App
       - review.html.erb
       - if user is signed in, if they are we will check to see if the review user.id = current user.id
 
-    
+## Star Rating jQuery Plugin
+    - raty.js
+        - npm install raty-js
+        - move the 3 images into assets/images
+        - move raty.js file into assets/javascript
+
+    - now, add a div in review.html.erb
