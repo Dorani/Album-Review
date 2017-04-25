@@ -1,5 +1,6 @@
 class AlbumsController < ApplicationController
   before_action :find_album, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit]
   def index
     if params[:category].blank?
       @albums = Album.all.order("created_at DESC")

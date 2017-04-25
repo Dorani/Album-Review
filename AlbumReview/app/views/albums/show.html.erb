@@ -10,6 +10,8 @@
   <h3><%= @album.author %></h3>
   <h4>Average Rating</h4>
   <div class="average-review-rating" data-score=<%= @average_review %>></div>
+  <span>Based on <%= @album.reviews.count %> reviews </span><br>
+
   <p><%= @album.description %></p>
   </div>
 
