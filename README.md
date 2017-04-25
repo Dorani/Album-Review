@@ -466,7 +466,7 @@ Ruby on Rails Album Review App
 ## Associations between models
 
   - model/review.rb
-      - a review belongs_to :book, user
+      - a review belongs_to :album, user
   - model/user.rb
       - has_many :reviews
   - model/album.rb
@@ -602,4 +602,6 @@ Ruby on Rails Album Review App
         - do the same for reviews
     - before_action
         - authenticate_user, only for :new and edit reviews
-        
+
+## Styling
+  - check commits in repo
