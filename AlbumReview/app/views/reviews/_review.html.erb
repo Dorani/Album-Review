@@ -1,13 +1,22 @@
-<h4><div class="review-rating" data-score="<%= review.rating %>"</div></h4>
-<p><%= review.comment %></p>
+<div class="review">
 
-<% if user_signed_in? %>
+	<div class="review-rating" data-score="<%= review.rating %>"></div>
+	<p class="review-comment"><%= review.comment %></p>
 
-  <% if review.user_id == current_user.id %>
 
-    <%= link_to "Edit", edit_album_review_path(review.album, review) %>
-    <%= link_to "Delete", album_review_path(review.album, review), method: :delete, data:{confim: "Are you sure?"} %>
+	<% if user_signed_in? %>
 
-  <% end %>
+		<% if review.user_id == current_user.id %>
 
-<% end %>
+			<div class="links btn-group">
+
+				<%= link_to "Edit", edit_album_review_path(review.album, review), class: "btn btn-custom" %>
+				<%= link_to "Delete", album_review_path(review.album, review), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
+
+			</div>
+		
+		<% end %>
+
+	<% end %>
+
+</div>
