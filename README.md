@@ -554,6 +554,7 @@ Ruby on Rails Album Review App
 
 ## Star Rating jQuery Plugin
 - raty.js
+    - https://www.npmjs.com/package/raty-js
     - npm install raty-js
     - move the 3 images into assets/images
     - move raty.js file into assets/javascript
