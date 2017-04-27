@@ -605,4 +605,4 @@ Ruby on Rails Album Review App
         - authenticate_user, only for :new and edit reviews
 
 ## Styling
-  - check commits in repo
+  - check commits in repos
