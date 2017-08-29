@@ -6,7 +6,7 @@
 
 	<% if user_signed_in? %>
 
-		<% if review.user_id == current_user.id %>
+		<% if user_signed_in? && review.user_id == current_user.id %>
 
 			<div class="links btn-group">
 
@@ -14,7 +14,7 @@
 				<%= link_to "Delete", album_review_path(review.album, review), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
 
 			</div>
-		
+
 		<% end %>
 
 	<% end %>
