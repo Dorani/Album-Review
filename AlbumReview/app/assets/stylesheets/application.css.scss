@@ -137,8 +137,8 @@
  }
 
  .album-show {
- 	height: 475px;
- 	width: 325px;
+ 	height: 260;/*adjusted for album sizes for app*/
+ 	width: 250;
  	@include background-tile;
  }
 
