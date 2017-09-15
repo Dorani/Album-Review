@@ -1,24 +1,7 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Edits
+## NAV BAR: Album Review to My logo.
+#Sign Up must contain "User Name" section.
+# Categories must be changed to "Era" - will provide eras upon request.
+# Remove the "Add Album" section. Only Admin can add albums. No user can add albums.
+# URL: Change Name to Honest2HipHop.
+# add timestamps on comments
